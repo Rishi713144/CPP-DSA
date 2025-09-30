@@ -1,0 +1,37 @@
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cout<<"Enter Size:";
+    cin>>n;
+    
+    int k=n-1;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < k; j++)
+        {
+            if (j<(n-i))
+            {
+                cout<<" ";
+            }
+            else if (j==(n-1))
+            {
+                cout<<"B";
+            }
+            else
+            {
+                cout<<"A";
+            }
+            
+        }
+        k++;
+        cout<<"\n";
+        
+    }
+    return 0;
+
+}
